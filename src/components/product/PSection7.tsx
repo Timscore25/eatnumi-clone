@@ -7,7 +7,7 @@ import { openReserve } from '@/lib/reserve';
  * PSection7 — Pre-page overlays: cookie consent banner + promotional
  * countdown announcement bar that appears above the header.
  *
- * Design template: all prose replaced with generic Lorem ipsum.
+ * Design template populated with Yuko brand copy.
  */
 
 const BRAND_RED = '#a31621';
@@ -41,7 +41,7 @@ function CountdownBar() {
       aria-label="Promotional countdown"
     >
       <div className="max-w-[1440px] mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm">
-        <span className="font-semibold uppercase tracking-wider">Lorem Ipsum Sale</span>
+        <span className="font-semibold uppercase tracking-wider">YUKO LAUNCH SALE</span>
 
         <button
           type="button"
@@ -92,11 +92,13 @@ function CookieBanner({ onClose }: { onClose: () => void }) {
           Cookie consent
         </h2>
         <p className="text-sm leading-relaxed text-neutral-700 mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.{' '}
+          We use cookies to improve your experience, analyze traffic, and
+          personalize content. By clicking Accept, you agree to our use of
+          cookies. See our{' '}
           <a href="#" className="underline" style={{ color: BRAND_RED }}>
             Privacy Policy
           </a>
+          .
         </p>
         <div className="flex flex-wrap gap-2">
           <button

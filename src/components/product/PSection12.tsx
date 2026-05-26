@@ -65,9 +65,9 @@ export default function PSection12() {
             <span className="italic">or Your Money Back!</span>
           </h2>
           <p className="mb-6 max-w-2xl text-sm leading-relaxed text-neutral-700 md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris.
+            Try Yuko risk-free. If after 90 days you don&apos;t feel lighter,
+            less bloated, and more in control — send back any unused boxes for
+            a full refund. No questions. No hoops. No restocking fees.
           </p>
           <button
             type="button"

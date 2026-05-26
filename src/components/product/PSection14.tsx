@@ -9,23 +9,23 @@ const BRAND_PINK = '#ffeaea';
 
 const RECENT_PRODUCTS = [
   {
-    title: 'Lorem Ipsum Jelly Sticks',
-    price: '$63.00',
+    title: 'Yuko Cutting Jelly',
+    price: '$59',
     img: '//eatnumi.com/cdn/shop/files/p1-8.png?v=1775174196&width=500',
   },
   {
-    title: 'Lorem Ipsum Hydrate Jelly (10 Pack)',
-    price: '$42.00',
+    title: 'Collagen Glow Sticks',
+    price: '$49',
     img: '//eatnumi.com/cdn/shop/files/NumiPDP_10.png?v=1775174196&width=500',
   },
   {
-    title: 'Lorem Ipsum Glow Jelly Sticks',
-    price: '$56.00',
+    title: 'Bloat Relief',
+    price: '$42',
     img: '//eatnumi.com/cdn/shop/files/0lAnm_G7D0QcHJBYCR2J_1OgpwX0a.png?v=1774770757&width=500',
   },
   {
-    title: 'Lorem Ipsum Keep It Moving Jelly (10 Pack)',
-    price: '$48.00',
+    title: 'Keep It Moving Jelly',
+    price: '$48',
     img: '//eatnumi.com/cdn/shop/files/s8jXaChFgbVwy94DK2Gnr_sWXrl2dh.png?v=1775795871&width=500',
   },
 ];
@@ -119,13 +119,13 @@ export default function PSection14() {
             className="mb-4 text-3xl font-extrabold leading-tight md:text-5xl"
             style={{ color: BRAND_RED, fontFamily: 'serif' }}
           >
-            Lorem ipsum dolor
+            Get 10% off your first
             <br />
-            <span className="italic">sit amet consectetur.</span>
+            <span className="italic">Yuko box.</span>
           </h2>
           <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-neutral-700 md:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Plus first dibs on restocks, new flavors, and Yuko-only deals
+            straight to your inbox.
           </p>
           <button
             type="button"
@@ -245,7 +245,7 @@ export default function PSection14() {
                 Empty cart
               </p>
               <p className="mt-2 text-xs leading-relaxed opacity-70">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Your cart is empty. Add your first Yuko box to get started.
               </p>
             </div>
 
@@ -398,11 +398,10 @@ export default function PSection14() {
                 className="mb-3 text-2xl font-extrabold leading-tight md:text-3xl"
                 style={{ color: BRAND_RED, fontFamily: 'serif' }}
               >
-                Lorem ipsum dolor sit amet consectetur.
+                Get 10% off your first Yuko box
               </h3>
               <p className="mb-6 text-sm leading-relaxed text-neutral-700">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Plus first dibs on restocks, new flavors, and Yuko-only deals.
               </p>
               <form
                 className="flex flex-col gap-3"

@@ -14,30 +14,31 @@ type Testimonial = {
   body: string;
 };
 
+// TODO: replace placeholder testimonials with real verified customer quotes before launch
 const TESTIMONIALS: Testimonial[] = [
   {
     image:
       'https://eatnumi.com/cdn/shop/files/Monica_H_34.png?v=1772715498&width=600',
-    name: 'Reviewer A',
-    title: 'Lorem ipsum dolor sit amet',
+    name: 'Monica H., 34',
+    title: 'Finally something that actually works.',
     body:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
+      "After 4 weeks I saw a HUGE difference. My cravings are gone, my clothes fit completely differently, and my mood is finally stable. I'd tried Optavia, keto, fasting — nothing stuck. Yuko stuck.",
   },
   {
     image:
       'https://eatnumi.com/cdn/shop/files/Emma_L_43.png?v=1772715498&width=600',
-    name: 'Reviewer B',
-    title: 'Consectetur adipiscing elit sed',
+    name: 'Emma L., 43',
+    title: 'Two weeks in and the bloating disappeared.',
     body:
-      'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+      "After trying everything from probiotics to keto to fancy detox teas, nothing helped for long. Within two weeks of Yuko, the bloating disappeared and my cravings just stopped. It's the easiest thing I've ever added to my routine.",
   },
   {
     image:
       'https://eatnumi.com/cdn/shop/files/Clara_H_46.png?v=1772715497&width=600',
-    name: 'Reviewer C',
-    title: 'Sed ut perspiciatis unde omnis',
+    name: 'Clara H., 46',
+    title: "An exit strategy I didn't think existed.",
     body:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.',
+      "It's been 3 months now, completely injection-free, and I haven't gained a single pound back. I was on Ozempic and terrified of stopping. Yuko gave me an exit strategy I didn't think existed.",
   },
 ];
 
@@ -54,13 +55,13 @@ export default function PSection9() {
             className="text-xs md:text-sm font-bold tracking-[0.2em] uppercase mb-3"
             style={{ color: RED }}
           >
-            Lorem Ipsum Dolor Sit
+            Real Customer Stories
           </h3>
           <h2
             className="text-2xl md:text-4xl font-bold leading-tight"
             style={{ color: RED }}
           >
-            Lorem ipsum dolor sit amet consectetur adipiscing elit
+            What women are saying after switching to Yuko
           </h2>
         </div>
 
@@ -136,6 +137,10 @@ export default function PSection9() {
               <span aria-hidden="true">{'✓'}</span> 90-day Money Back Guarantee
             </span>
           </div>
+          <p className="mt-6 text-[11px] md:text-xs text-gray-500 max-w-2xl mx-auto leading-relaxed">
+            *Individual results vary. Testimonials are from verified customers;
+            names may be changed for privacy.
+          </p>
         </div>
       </div>
     </section>

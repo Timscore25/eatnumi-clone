@@ -9,52 +9,52 @@ const BRAND_PINK = '#ffeaea';
 
 const FAQ_ITEMS: { q: string; a: string }[] = [
   {
-    q: 'Lorem ipsum dolor sit amet, consectetur adipiscing?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    q: 'How does Yuko actually work?',
+    a: "Yuko's 4-in-1 Korean formula targets cravings (Garcinia), fullness (chia), gut health (collagen), and skin (HA) in one pomegranate jelly stick. Most women feel less bloated within a week and notice clothes fit differently by week 4.",
   },
   {
-    q: 'Duis aute irure dolor in reprehenderit?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    q: 'Is it safe to take with other medications?',
+    a: "Yuko is a food supplement made with natural ingredients. We always recommend checking with your doctor if you're on any prescription medication — especially blood-thinners, antidepressants, or diabetes medication.",
   },
   {
-    q: 'Ut enim ad minim veniam, quis nostrud?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+    q: "What if I'm on Ozempic or another GLP-1?",
+    a: "Many of our customers use Yuko to transition off GLP-1s gradually with their doctor's guidance. It's not a replacement for medical care — but the natural appetite support helps ease the transition.",
   },
   {
-    q: 'Sed ut perspiciatis unde omnis iste natus?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.',
+    q: 'When will I see results?',
+    a: 'Bloating relief usually within 5-7 days. Cravings quieter by week 2. Clothes fitting differently by week 4-6. Deepest results typically appear at month 3.',
   },
   {
-    q: 'Quis autem vel eum iure reprehenderit?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.',
+    q: 'Does it really taste good?',
+    a: 'Yes. Pomegranate flavor, slightly tart, genuinely sweet. Most customers say it tastes like a treat — not a supplement.',
   },
   {
-    q: 'Temporibus autem quibusdam et aut officiis?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.',
+    q: 'Are there any side effects?',
+    a: "Yuko is stimulant-free, gluten-free, and made with natural ingredients. The most common feedback is 'I felt nothing — except not hungry between meals.' If you experience anything unusual, stop use and consult your doctor.",
   },
   {
-    q: 'At vero eos et accusamus et iusto?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.',
+    q: 'How many sticks per day?',
+    a: 'One stick daily for standard support. Two sticks (morning + evening) for intensive support during the first 30 days. Most women find one stick after lunch is the sweet spot.',
   },
   {
-    q: 'Nemo enim ipsam voluptatem quia voluptas?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.',
+    q: 'Will I gain weight back if I stop?',
+    a: "Yuko isn't a crash solution — it's a daily habit. Many customers continue indefinitely. If you do stop, the appetite-resetting effect can last weeks, especially after 3+ months of use.",
   },
   {
-    q: 'Excepteur sint occaecat cupidatat non proident?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat.',
+    q: 'Is this safe during pregnancy or breastfeeding?',
+    a: 'No. Yuko is not recommended for pregnant or breastfeeding women. Please consult your doctor.',
   },
   {
-    q: 'Itaque earum rerum hic tenetur a sapiente?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.',
+    q: 'Where is Yuko made?',
+    a: 'Yuko is Korean-formulated and manufactured in a GMP-certified facility. Every batch is third-party lab tested for purity.',
   },
   {
-    q: 'Mollitia animi, id est laborum et dolorum?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.',
+    q: 'How long does shipping take?',
+    a: 'Orders ship within 24 hours via expedited shipping. Most U.S. customers receive their box in 4-6 business days. Free shipping on 2+ boxes.',
   },
   {
-    q: 'Quis nostrum exercitationem ullam corporis?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Email us anytime at support@example.com',
+    q: "What if it doesn't work for me?",
+    a: "90-day money-back guarantee. Don't feel the difference? Send back any unused boxes and we'll refund every penny. Less than 0.5% of customers ever ask for a refund.",
   },
 ];
 
@@ -163,8 +163,10 @@ export default function PSection11() {
               <span className="italic">or Your Money Back!</span>
             </h3>
             <p className="mb-5 max-w-xl text-sm leading-relaxed text-neutral-700 md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              We&apos;re so confident in Yuko&apos;s Korean formula that if you
+              don&apos;t feel lighter, less bloated, and more in control of
+              your cravings within 90 days — send your boxes back. We&apos;ll
+              refund every penny. No questions, no hoops.
             </p>
             <button
               type="button"

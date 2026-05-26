@@ -1,5 +1,8 @@
 'use client';
 
+// TODO before launch:
+//   - replace placeholder support@yuko.com / press@yuko.com with real domain emails
+//   - replace placeholder Austin, TX address with real registered business address
 const BRAND_RED = '#a31621';
 const BRAND_CREAM = '#fff9f5';
 
@@ -33,11 +36,11 @@ export default function PSection13() {
           {/* Brand / Logo */}
           <div className="md:col-span-3">
             <a href="/" className="mb-4 inline-block text-2xl font-extrabold tracking-tight md:text-3xl" style={{ fontFamily: 'serif' }}>
-              Brand Name
+              Yuko
             </a>
             <p className="mt-3 text-sm leading-relaxed opacity-90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt.
+              Yuko — Korean wellness, made for women who want to feel
+              satisfied, energized, and confident.
             </p>
           </div>
 
@@ -69,20 +72,23 @@ export default function PSection13() {
             <ul className="flex flex-col gap-3 text-sm">
               <li>
                 <div className="font-semibold">Customer Support</div>
+                {/* TODO: replace with real support email */}
                 <a href="/" className="opacity-90 hover:underline">
-                  support@example.com
+                  support@yuko.com
                 </a>
               </li>
               <li>
                 <div className="font-semibold">Media &amp; Partnerships</div>
+                {/* TODO: replace with real press email */}
                 <a href="/" className="opacity-90 hover:underline">
-                  partnerships@example.com
+                  press@yuko.com
                 </a>
               </li>
               <li>
                 <div className="font-semibold">Address</div>
+                {/* TODO: replace with real registered business address */}
                 <div className="opacity-90">
-                  123 Lorem Street, Ipsum City, Country
+                  701 Tillery Street, Austin, TX, USA
                 </div>
               </li>
             </ul>
@@ -107,10 +113,11 @@ export default function PSection13() {
             </div>
 
             <h4 className="mb-2 text-xs font-semibold uppercase tracking-[0.2em] opacity-80">
-              Sign Up To Receive Special Offers
+              Sign up for 10% off + Yuko launch news
             </h4>
             <p className="mb-3 text-sm opacity-90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Get tips on quiet cravings, energy resets, and skin-saving
+              routines from the Yuko team.
             </p>
             <form
               className="flex overflow-hidden rounded-full"
@@ -144,7 +151,7 @@ export default function PSection13() {
         {/* Bottom row */}
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div className="text-xs opacity-90">
-            &copy; 2026 Brand Name Inc. All Rights Reserved.
+            &copy; 2026 Yuko Inc. All Rights Reserved.
           </div>
 
           <div className="flex flex-wrap items-center gap-2">

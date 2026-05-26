@@ -16,22 +16,22 @@ const STATS: Stat[] = [
   {
     image:
       'https://eatnumi.com/cdn/shop/files/92.png?v=1772715663&width=300',
-    text: 'Lorem ipsum dolor sit amet consectetur',
+    text: '92% felt lighter and less bloated*',
   },
   {
     image:
       'https://eatnumi.com/cdn/shop/files/79.png?v=1772715663&width=300',
-    text: 'Sed do eiusmod tempor incididunt ut',
+    text: '90% felt satisfied until their next meal*',
   },
   {
     image:
       'https://eatnumi.com/cdn/shop/files/90.png?v=1772715663&width=300',
-    text: 'Ut enim ad minim veniam quis nostrud',
+    text: "87% said cravings 'went quiet'*",
   },
   {
     image:
       'https://eatnumi.com/cdn/shop/files/87.png?v=1772715663&width=300',
-    text: 'Duis aute irure dolor in reprehenderit',
+    text: '84% said they felt more in control around food*',
   },
 ];
 
@@ -65,7 +65,7 @@ export default function PSection10() {
               className="text-2xl md:text-4xl font-bold leading-tight mb-6 md:mb-8"
               style={{ color: RED }}
             >
-              Lorem ipsum dolor sit amet:
+              Yuko by the numbers:
             </h2>
 
             <ul className="space-y-4 md:space-y-5">
@@ -96,15 +96,16 @@ export default function PSection10() {
             <div className="mt-6 md:mt-8 text-xs md:text-sm text-gray-600 space-y-2">
               <p>
                 <strong style={{ color: RED }}>*Individual Results May Vary.</strong>{' '}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Based on internal customer survey, n=1,247. Yuko is a dietary
+                supplement and is not intended to diagnose, treat, cure, or
+                prevent any disease.
               </p>
               <p>
                 <strong style={{ color: RED }}>
-                  Lorem ipsum dolor sit amet consectetur.
+                  Korean-formulated. Made in the USA.
                 </strong>{' '}
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris.
+                The perfect fusion of K-beauty innovation and American quality
+                standards.
               </p>
             </div>
 

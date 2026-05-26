@@ -29,7 +29,7 @@ const utilityItems = [
 
 const primaryNav: { label: string; href: string }[] = [
   { label: 'Shop All', href: '#' },
-  { label: 'Featured Products', href: '#' },
+  { label: 'Bestsellers', href: '#' },
   { label: 'Subscriptions', href: '#' },
   { label: 'About', href: '#' },
 ];

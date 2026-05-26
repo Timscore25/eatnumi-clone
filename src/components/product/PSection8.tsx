@@ -8,16 +8,46 @@ const CREAM = '#fff9f5';
 const SOFT_PINK = '#ffeaea';
 
 const ROWS: Array<{ brand: string; other: string }> = [
-  { brand: 'Lorem ipsum dolor sit', other: 'Sed do eiusmod tempor' },
-  { brand: 'Consectetur adipiscing elit', other: 'Ut labore et dolore magna' },
-  { brand: 'Aliqua enim ad minim', other: 'Veniam quis nostrud exerci' },
-  { brand: 'Tation ullamco laboris', other: 'Nisi ut aliquip ex ea' },
-  { brand: 'Commodo consequat duis', other: 'Aute irure dolor reprehend' },
-  { brand: 'Voluptate velit esse', other: 'Cillum dolore eu fugiat' },
-  { brand: 'Nulla pariatur excepteur', other: 'Sint occaecat cupidatat' },
-  { brand: 'Non proident sunt culpa', other: 'Qui officia deserunt mollit' },
-  { brand: 'Anim id est laborum', other: 'Sed ut perspiciatis unde' },
-  { brand: 'Omnis iste natus error', other: 'Sit voluptatem accusantium' },
+  {
+    brand: 'Korean-formulated 4-in-1 system',
+    other: 'Single-ingredient gimmicks',
+  },
+  {
+    brand: 'Quiets cravings naturally (no stimulants)',
+    other: 'Caffeine-loaded fat burners',
+  },
+  {
+    brand: 'Pomegranate jelly — tastes like a treat',
+    other: 'Chalky pills or fishy powders',
+  },
+  {
+    brand: 'Faster absorption than capsules',
+    other: 'Poor bioavailability',
+  },
+  {
+    brand: 'Collagen + HA protect your skin',
+    other: 'Hollow-face risk during weight loss',
+  },
+  {
+    brand: 'Made in GMP-certified facility',
+    other: 'Unverified overseas factories',
+  },
+  {
+    brand: 'Less than $2/day',
+    other: '$1,200/month GLP-1 injections',
+  },
+  {
+    brand: '90-day money-back guarantee',
+    other: 'No refunds, all sales final',
+  },
+  {
+    brand: 'Developed with Korean wellness science',
+    other: 'Generic Western supplement blends',
+  },
+  {
+    brand: '100,000+ real women, real results',
+    other: 'Influencer-only testimonials',
+  },
 ];
 
 export default function PSection8() {
@@ -29,11 +59,15 @@ export default function PSection8() {
     >
       <div className="mx-auto max-w-5xl px-4">
         <h2
-          className="text-center font-bold text-2xl md:text-4xl mb-10 md:mb-14 leading-tight"
+          className="text-center font-bold text-2xl md:text-4xl mb-3 leading-tight"
           style={{ color: RED }}
         >
-          Lorem ipsum dolor sit amet consectetur adipiscing
+          Why women choose Yuko over the alternatives
         </h2>
+        <p className="text-center text-sm md:text-base text-neutral-700 max-w-2xl mx-auto mb-10 md:mb-14">
+          Most supplements only address one symptom. Yuko was built for the
+          full picture.
+        </p>
 
         {/* Header row */}
         <div className="grid grid-cols-[1fr_auto_1fr] gap-2 md:gap-6 items-center mb-4 md:mb-6">
@@ -48,7 +82,7 @@ export default function PSection8() {
               className="mx-auto h-8 md:h-10 w-auto object-contain"
             />
             <div className="mt-2 text-xs md:text-sm font-semibold" style={{ color: RED }}>
-              Brand Name
+              Yuko
             </div>
           </div>
 
@@ -64,10 +98,10 @@ export default function PSection8() {
             style={{ border: '1px solid #e5e5e5' }}
           >
             <div className="text-xs md:text-sm font-semibold text-gray-500">
-              Alternatives
+              Other Brands
             </div>
             <div className="mt-2 text-[11px] md:text-xs text-gray-400">
-              Lorem ipsum dolor
+              GLP-1s &amp; generic supplements
             </div>
           </div>
         </div>
@@ -126,7 +160,8 @@ export default function PSection8() {
           </button>
           <div className="mt-4 text-xs md:text-sm text-gray-600">
             <span className="inline-flex items-center gap-2">
-              <span aria-hidden="true">{'✓'}</span> 99-day Money Back Guarantee
+              <span aria-hidden="true">{'✓'}</span> 99-day Money-Back Guarantee
+              · Free shipping on 2+ boxes
             </span>
           </div>
         </div>
