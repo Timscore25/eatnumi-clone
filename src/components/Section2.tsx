@@ -67,8 +67,8 @@ function HeroSection() {
             letterSpacing: '-0.01em',
           }}
         >
-          5 Reasons To Choose Our{' '}
-          <span style={{ color: BRAND_RED }}>Featured Product</span>
+          5 Reasons Why Women Are Ditching Injections, Supplements & Restrictive Diets For This{' '}
+          <span style={{ color: BRAND_RED }}>$2 Korean Jelly Stick</span>
         </h1>
 
         <div className="mt-5 flex items-center justify-center gap-3">
@@ -80,7 +80,7 @@ function HeroSection() {
           />
           <div className="leading-tight">
             <div className="text-sm font-semibold" style={{ color: TEXT_DARK }}>
-              By&nbsp;Author
+              By&nbsp;Sarah&nbsp;Mitchell
             </div>
             <div className="text-xs" style={{ color: MUTED }}>
               Last Updated February 20, 2026
@@ -93,11 +93,11 @@ function HeroSection() {
           style={{ backgroundColor: SOFT_PINK, color: TEXT_DARK }}
         >
           <span className="font-semibold">Summary:</span>{' '}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur.
+          Your frustration isn&apos;t permanent. Just because everything&apos;s
+          failed doesn&apos;t mean you&apos;re stuck with bloating, cravings,
+          and feeling uncomfortable in your clothes forever. Discover how this
+          Korean jelly stick is helping women finally feel satisfied and in
+          control — WITHOUT needles, nausea, or $1,000/month price tags.
         </div>
 
         <div className="mt-6 overflow-hidden rounded-md shadow-sm">
@@ -115,7 +115,7 @@ function HeroSection() {
             className="inline-flex items-center justify-center rounded-full px-7 py-3 font-semibold text-white transition-opacity hover:opacity-90"
             style={{ backgroundColor: BRAND_RED, fontSize: 17 }}
           >
-            Start My cut →
+            Start My Cut →
           </a>
         </div>
       </div>
@@ -128,26 +128,26 @@ function Reason1Section() {
   const milestones = [
     {
       day: '1',
-      label: 'Use 1',
-      title: 'Lorem ipsum dolor sit amet.',
-      desc: 'Consectetur adipiscing elit.',
+      label: 'Day 1',
+      title: 'Cravings start to quiet down.',
+      desc: 'You feel satisfied longer.',
     },
     {
       day: '7',
       label: 'Week 1',
-      title: 'Sed do eiusmod tempor incididunt.',
-      desc: 'Ut labore et dolore.',
+      title: 'Bloating starts to ease.',
+      desc: 'You feel lighter.',
     },
     {
       day: '30',
       label: 'Month 1',
-      title: 'Ut enim ad minim veniam quis.',
-      desc: 'Nostrud exercitation ullamco.',
+      title: 'Clothes start fitting more comfortably.',
+      desc: 'You feel more like yourself.',
     },
     {
       day: '90',
       label: 'Month 3',
-      title: 'Duis aute irure dolor in reprehenderit voluptate.',
+      title: 'You look in the mirror and feel confident again.',
       desc: '',
     },
   ];
@@ -165,26 +165,27 @@ function Reason1Section() {
             fontSize: 'clamp(22px, 2.8vw, 36px)',
           }}
         >
-          1. Reason Number One —{' '}
+          1. It Quiets Cravings & Keeps You Full —{' '}
           <span style={{ color: BRAND_RED }}>
-            Lorem Ipsum Dolor Sit Amet
+            Without Needles, Nausea, Or $14,000/Year Price Tags
           </span>
         </h2>
 
         <p className="mt-4 text-[15px] md:text-base leading-relaxed" style={{ color: TEXT_DARK }}>
-          Lorem ipsum dolor sit amet, consectetur{' '}
-          <span className="font-semibold">adipiscing elit</span> — sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco.
+          The active ingredient in Yuko —{' '}
+          <span className="font-semibold">Garcinia Cambogia</span> — naturally
+          supports serotonin, the brain chemical that tells you &lsquo;enough.&rsquo;
+          So the constant food noise finally quiets down. You eat a
+          pomegranate-flavored jelly stick. That&apos;s it.
         </p>
 
         <div
           className="mt-5 rounded-md p-4 md:p-5 text-[15px] md:text-base leading-relaxed"
           style={{ backgroundColor: SOFT_PINK, color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet. <strong>Consectetur adipiscing.</strong>{' '}
-          Sed do eiusmod. Tempor incididunt. Ut labore. Et dolore magna. Ut
-          enim ad minim.
+          No prescription. <strong>No waitlist.</strong> No pharmacy backorder.
+          No nausea. No jitters. No crash. Just a jelly stick that quietly
+          changes how you feel around food.
         </div>
 
         <div className="mt-6 overflow-hidden rounded-md">
@@ -209,8 +210,8 @@ function Reason1Section() {
           className="mt-5 text-center text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          <span className="font-semibold">Lorem ipsum dolor.</span> Sit amet
-          consectetur. Adipiscing elit.
+          <span className="font-semibold">Ozempic: $1,200/month.</span> Yuko:
+          less than $1/day. Same satisfied feeling — without the needles.
         </p>
 
         {/* Timeline */}
@@ -269,27 +270,27 @@ function Reason2Section() {
   const ingredients = [
     {
       icon: '🍊',
-      name: 'Ingredient One',
-      meta: '(Lorem ipsum)',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      name: 'Garcinia Cambogia',
+      meta: '(appetite support)',
+      copy: 'Supports healthy serotonin levels to naturally quiet appetite and reduce cravings. When serotonin is balanced, your brain finally gets the ‘enough’ signal.',
     },
     {
       icon: '🌾',
-      name: 'Ingredient Two',
+      name: 'Chia Seeds',
       meta: '',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      copy: 'Expand in your stomach to create real, lasting fullness. Plus they’re packed with fiber to support digestive comfort.',
     },
     {
       icon: '🐟',
-      name: 'Ingredient Three',
+      name: 'Marine Collagen',
       meta: '',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.',
+      copy: 'Supports skin firmness and elasticity from the inside out. Your skin stays supple and healthy-looking.',
     },
     {
       icon: '💧',
-      name: 'Ingredient Four',
+      name: 'Hyaluronic Acid',
       meta: '',
-      copy: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod.',
+      copy: 'Locks moisture into your skin from the inside so you glow — not look depleted.',
     },
   ];
 
@@ -306,17 +307,19 @@ function Reason2Section() {
             fontSize: 'clamp(22px, 2.8vw, 36px)',
           }}
         >
-          2. Reason Number Two —{' '}
-          <span style={{ color: BRAND_RED }}>Lorem Ipsum Dolor</span> Sit Amet
-          Consectetur Adipiscing
+          2. It Targets The{' '}
+          <span style={{ color: BRAND_RED }}>ROOT CAUSE</span> Of Cravings &
+          Bloating — Not Just The Symptoms
         </h2>
 
         <p
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua:
+          Most supplements mask hunger temporarily. Yuko works at a deeper
+          level. This isn&apos;t a random cocktail of trendy ingredients —
+          it&apos;s a Korean-formulated 4-in-1 system designed for women who
+          want to feel satisfied, energized, and confident in their skin:
         </p>
 
         <div className="mt-6 overflow-hidden rounded-md">
@@ -363,12 +366,12 @@ function Reason2Section() {
           className="mt-6 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do{' '}
+          Four science-backed ingredients working in sync — so you feel{' '}
           <span className="font-semibold">
-            eiusmod tempor incididunt
+            satisfied, lighter, and more like yourself
           </span>{' '}
-          ut labore et dolore magna aliqua, ut enim ad minim veniam quis
-          nostrud exercitation ullamco.
+          every single day. No needles. No pills. No deprivation. Just one
+          pomegranate jelly stick that does the heavy lifting for you.
         </p>
 
         <div className="mt-7 flex justify-center">
@@ -388,10 +391,10 @@ function Reason2Section() {
 /* -------------------- Reason 3 -------------------- */
 function Reason3Section() {
   const bullets = [
-    'Lorem ipsum dolor sit amet consectetur',
-    'Adipiscing elit sed do eiusmod tempor incididunt ut labore',
-    'Ut enim ad minim veniam quis nostrud',
-    'Duis aute irure dolor in reprehenderit voluptate velit',
+    'Korean-formulated for maximum efficacy',
+    'Made in a GMP-certified facility for quality you can trust',
+    '4 key ingredients instead of just 1 or 2',
+    'Added collagen + HA to support healthy, glowing skin',
   ];
 
   return (
@@ -407,9 +410,9 @@ function Reason3Section() {
             fontSize: 'clamp(22px, 2.8vw, 36px)',
           }}
         >
-          3. Reason Number Three —{' '}
+          3. It&apos;s A Jelly —{' '}
           <span style={{ color: BRAND_RED }}>
-            Lorem Ipsum Dolor Sit Amet
+            Not Another Pill You&apos;ll Forget To Take
           </span>
         </h2>
 
@@ -417,10 +420,10 @@ function Reason3Section() {
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Pills are easy to skip. Hard to swallow. Most don&apos;t even absorb
+          properly. Yuko is different. It&apos;s a pomegranate-flavored jelly
+          stick with chia seeds. Tastes like a treat. Absorbs faster than
+          capsules. No water needed — just tear, squeeze, and eat.
         </p>
 
         <div className="mt-6 overflow-hidden rounded-md">
@@ -436,27 +439,26 @@ function Reason3Section() {
           className="mt-6 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          <span className="font-semibold">Lorem ipsum dolor.</span> Sit amet
-          consectetur adipiscing elit. Sed do eiusmod tempor incididunt. Ut
-          labore et dolore magna aliqua —{' '}
-          <em>ut enim ad minim veniam</em>. Quis nostrud exercitation. Ullamco
-          laboris nisi.
+          <span className="font-semibold">Take it after lunch.</span> Feel full
+          until dinner. No water, no scheduling, no &lsquo;wait, did I take it
+          today?&rsquo; — <em>just tear, squeeze, and eat</em>. This is the
+          format Korean women have been using for years. Now it&apos;s finally
+          available in the US.
         </p>
 
         <p
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut{' '}
+          Here&apos;s what makes{' '}
           <a
             href={PRODUCT_LINK}
             className="font-semibold underline"
             style={{ color: BRAND_RED }}
           >
-            labore et dolore magna
+            Yuko different
           </a>{' '}
-          aliqua, ut enim ad minim veniam quis nostrud exercitation:
+          from every other &lsquo;weight loss&rsquo; product on the shelf:
         </p>
 
         <ul className="mt-5 space-y-3">
@@ -496,10 +498,10 @@ function Reason3Section() {
 /* -------------------- Reason 4 -------------------- */
 function Reason4Section() {
   const stats = [
-    { pct: '92%', txt: 'lorem ipsum dolor sit amet*' },
-    { pct: '90%', txt: 'consectetur adipiscing elit sed*' },
-    { pct: '87%', txt: 'eiusmod tempor incididunt ut*' },
-    { pct: '84%', txt: 'labore et dolore magna aliqua*' },
+    { pct: '92%', txt: 'felt lighter and less bloated*' },
+    { pct: '90%', txt: 'felt satisfied until their next meal*' },
+    { pct: '87%', txt: 'said cravings ‘went quiet’*' },
+    { pct: '84%', txt: 'said they felt more in control around food*' },
   ];
 
   const beforeAfter = [
@@ -520,15 +522,17 @@ function Reason4Section() {
             fontSize: 'clamp(22px, 2.8vw, 36px)',
           }}
         >
-          4. Reason Number Four —{' '}
-          <span style={{ color: BRAND_RED }}>Lorem Ipsum Dolor</span>
+          4. Real Women Are Seeing{' '}
+          <span style={{ color: BRAND_RED }}>Real Results — Fast</span>
         </h2>
 
         <p
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit:
+          These aren&apos;t paid influencers. These are women who were
+          skeptical, frustrated, and exhausted from trying everything else.
+          After 30 days on Yuko:
         </p>
 
         <div className="mt-6 grid grid-cols-2 gap-4">
@@ -558,15 +562,15 @@ function Reason4Section() {
           className="mt-3 text-xs italic"
           style={{ color: MUTED }}
         >
-          *Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          *Based on internal customer survey, n=1,247. Individual results vary.
         </p>
 
         <p
           className="mt-6 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          And it&apos;s not just numbers on a survey. Here&apos;s what real
+          customers are saying — in their own words.
         </p>
 
         <div className="mt-6 grid gap-4 md:grid-cols-2">
@@ -589,15 +593,15 @@ function Reason4Section() {
             style={{ backgroundColor: SOFT_PINK }}
           >
             <div className="font-semibold" style={{ color: BRAND_RED }}>
-              Reviewer A
+              Michelle R.
             </div>
             <p
               className="mt-1 text-[15px] leading-relaxed"
               style={{ color: TEXT_DARK }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation.
+              &ldquo;I used to feel so bloated by dinner every night. After 2
+              weeks of Yuko, I finally feel comfortable all day. My husband
+              keeps asking what I&apos;m doing differently!&rdquo;
             </p>
           </div>
           <div
@@ -605,15 +609,15 @@ function Reason4Section() {
             style={{ backgroundColor: SOFT_PINK }}
           >
             <div className="font-semibold" style={{ color: BRAND_RED }}>
-              Reviewer B
+              Rachel B.
             </div>
             <p
               className="mt-1 text-[15px] leading-relaxed"
               style={{ color: TEXT_DARK }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              &ldquo;I&apos;m 52 and thought feeling this good was behind me.
+              Yuko proved me wrong. My clothes fit better than they have in
+              years.&rdquo;
             </p>
           </div>
         </div>
@@ -622,14 +626,14 @@ function Reason4Section() {
           className="mt-6 text-[15px] md:text-base leading-relaxed italic"
           style={{ color: TEXT_DARK }}
         >
-          &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-          do eiusmod tempor.&quot; — Lorem ipsum dolor sit amet consectetur
-          adipiscing elit.
+          &ldquo;Finally something that actually works. I&apos;m not starving
+          myself and I finally feel satisfied after meals.&rdquo; — Emily S.,
+          verified Yuko customer.
         </p>
 
         <p className="mt-2 text-xs italic" style={{ color: MUTED }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor.
+          *Individual results vary. Customer testimonials reflect personal
+          experience and are not a guarantee.
         </p>
 
         <div className="mt-8 flex justify-center">
@@ -677,7 +681,7 @@ function Reason5Section() {
         >
           5. It Comes With A{' '}
           <span style={{ color: BRAND_RED }}>
-            Lorem Ipsum Dolor Sit
+            90-Day Money Back Guarantee
           </span>
         </h2>
 
@@ -685,9 +689,9 @@ function Reason5Section() {
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation.
+          Buying new supplements is risky. You never truly know if it&apos;s
+          going to work. So we&apos;re removing every reason not to try Yuko —
+          and we&apos;re taking ALL the risk for you.
         </p>
 
         <div className="mt-6 flex flex-col items-center text-center gap-4 md:flex-row md:text-left md:items-start">
@@ -701,9 +705,9 @@ function Reason5Section() {
             className="text-[15px] md:text-base leading-relaxed"
             style={{ color: TEXT_DARK }}
           >
-            Lorem ipsum dolor sit{' '}
-            <span className="font-semibold">Lorem ipsum dolor sit amet.</span>{' '}
-            Consectetur adipiscing elit sed do eiusmod tempor.
+            Try Yuko for 3 full months.{' '}
+            <span className="font-semibold">If you don&apos;t feel lighter, less bloated, and more in control of your cravings —</span>{' '}
+            send it back for a full refund. No questions asked.
           </p>
         </div>
 
@@ -711,25 +715,26 @@ function Reason5Section() {
           className="mt-5 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua... ut
-          enim ad minim veniam quis nostrud... duis aute irure dolor in
-          reprehenderit voluptate...
+          That&apos;s 90 days to eat your jelly stick after lunch, watch the
+          cravings quiet down, watch the bloating ease, watch your clothes fit
+          better — risk-free. If you&apos;re not amazed, you don&apos;t pay a
+          cent.
         </p>
 
         <p
           className="mt-4 text-[15px] md:text-base leading-relaxed font-semibold"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet. Consectetur adipiscing elit.
+          We&apos;re so confident Yuko will work for you that we&apos;re taking
+          ALL the risk.
         </p>
 
         <p
           className="mt-4 text-[15px] md:text-base leading-relaxed"
           style={{ color: TEXT_DARK }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore.
+          Stock is limited — supplies are sourced from our Korean partner lab,
+          and demand has exploded since launch.
         </p>
 
         {/* Limited Time Sale Pamphlet */}
@@ -753,20 +758,20 @@ function Reason5Section() {
               className="text-sm md:text-[15px] font-semibold uppercase tracking-wide"
               style={{ color: BRAND_RED }}
             >
-              Lorem Ipsum Dolor Sit Amet
+              Yuko Korean Cutting Jelly Sticks
             </p>
             <h3
               className="mt-2 font-bold leading-tight"
               style={{ color: BRAND_RED, fontSize: 'clamp(22px, 2.6vw, 32px)' }}
             >
-              Lorem ipsum dolor sit amet consectetur
+              BUY 2 GET 4 FREE + FREE SHIPPING
             </h3>
 
             <p
               className="mt-3 text-[15px] md:text-base leading-relaxed"
               style={{ color: TEXT_DARK }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Korean-formulated. Made in the USA. Yours risk-free for 90 days.
             </p>
 
             <div className="mt-5 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
@@ -781,19 +786,19 @@ function Reason5Section() {
                   <li className="flex items-start gap-2">
                     <span style={{ color: BRAND_RED }}>✓</span>
                     <span>
-                      <span className="font-semibold">Lorem</span> ipsum dolor
-                      sit
+                      <span className="font-semibold">FREE</span> Extra Jelly
+                      Sticks
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span style={{ color: BRAND_RED }}>✓</span>
                     <span>
-                      <span className="font-semibold">Lorem</span> ipsum
+                      <span className="font-semibold">FREE</span> Shipping
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span style={{ color: BRAND_RED }}>✓</span>
-                    <span>Lorem ipsum dolor sit amet</span>
+                    <span>90-Day Money Back Guarantee</span>
                   </li>
                 </ul>
 
@@ -824,10 +829,11 @@ function Reason5Section() {
           style={{ color: TEXT_DARK }}
         >
           <span className="font-semibold">
-            Lorem ipsum dolor sit amet.
+            79% of women report feeling lighter within the first 30 days.*
           </span>{' '}
-          Consectetur adipiscing elit sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua.
+          You can either keep doing what you&apos;ve been doing — or finally
+          try the format that&apos;s changing the conversation around weight,
+          bloating, and cravings.
         </p>
 
         <div className="mt-6 flex justify-center">
@@ -844,7 +850,14 @@ function Reason5Section() {
           className="mt-3 text-center text-xs md:text-sm font-semibold"
           style={{ color: BRAND_RED }}
         >
-          Sell-Out Risk: HIGH | LIMITED UNITS AVAILABLE
+          Sell-Out Risk: HIGH — Limited units available
+        </p>
+        <p
+          className="mt-2 text-center text-[11px] italic"
+          style={{ color: MUTED }}
+        >
+          *Individual results vary. Yuko is a dietary supplement, not a
+          prescription medication.
         </p>
       </div>
     </section>
@@ -861,30 +874,143 @@ type Review = {
   text: string;
 };
 
-const LOREM_SHORT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
-const LOREM_MEDIUM =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
-const LOREM_LONG =
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.';
-
 const reviews: Review[] = [
-  { name: 'Reviewer A', img: IMG.reviewer1, time: '1w', reaction: '❤️', count: 89, text: LOREM_LONG },
-  { name: 'Reviewer B', img: IMG.reviewer2, time: '3d', reaction: '👍❤️', count: 121, text: LOREM_LONG },
-  { name: 'Reviewer C', img: IMG.reviewer3, time: '5d', reaction: '❤️', count: 67, text: LOREM_MEDIUM },
-  { name: 'Reviewer D', img: IMG.reviewer4, time: '1w', reaction: '👍❤️', count: 203, text: LOREM_MEDIUM },
-  { name: 'Reviewer E', img: IMG.reviewer5, time: '4d', reaction: '❤️🔥', count: 156, text: LOREM_MEDIUM },
-  { name: 'Reviewer F', img: IMG.reviewer6, time: '6d', reaction: '👍', count: 78, text: LOREM_SHORT },
-  { name: 'Reviewer G', img: IMG.reviewer7, time: '2w', reaction: '❤️👍', count: 234, text: LOREM_LONG },
-  { name: 'Reviewer H', img: IMG.reviewer8, time: '5d', reaction: '😮❤️', count: 92, text: LOREM_SHORT },
-  { name: 'Reviewer I', img: IMG.reviewer9, time: '1w', reaction: '❤️', count: 187, text: LOREM_MEDIUM },
-  { name: 'Reviewer J', img: IMG.reviewer10, time: '3d', reaction: '👍❤️', count: 143, text: LOREM_MEDIUM },
-  { name: 'Reviewer K', img: IMG.reviewer1, time: '1w', reaction: '👍', count: 56, text: LOREM_SHORT },
-  { name: 'Reviewer L', img: IMG.reviewer2, time: '2d', reaction: '🔥❤️', count: 312, text: LOREM_LONG },
-  { name: 'Reviewer M', img: IMG.reviewer3, time: '4d', reaction: '😮👍', count: 98, text: LOREM_MEDIUM },
-  { name: 'Reviewer N', img: IMG.reviewer4, time: '1w', reaction: '❤️🎉', count: 276, text: LOREM_MEDIUM },
-  { name: 'Reviewer O', img: IMG.reviewer5, time: '5d', reaction: '❤️💪', count: 189, text: LOREM_MEDIUM },
-  { name: 'Reviewer P', img: IMG.reviewer6, time: '3d', reaction: '👍', count: 71, text: LOREM_MEDIUM },
-  { name: 'Reviewer Q', img: IMG.reviewer7, time: '1d', reaction: '❤️👍🔥', count: 401, text: LOREM_LONG },
+  {
+    name: 'Michelle R.',
+    img: IMG.reviewer1,
+    time: '1w',
+    reaction: '❤️',
+    count: 89,
+    text: 'I used to feel so bloated by dinner every night. After 2 weeks of Yuko, I finally feel comfortable all day. My husband keeps asking what I’m doing differently!',
+  },
+  {
+    name: 'Amanda T.',
+    img: IMG.reviewer2,
+    time: '3d',
+    reaction: '👍❤️',
+    count: 121,
+    text: 'After having my second baby, I felt so unlike myself. Yuko changed everything. I finally feel comfortable in my body again and my energy is through the roof!',
+  },
+  {
+    name: 'Jennifer K.',
+    img: IMG.reviewer3,
+    time: '5d',
+    reaction: '❤️',
+    count: 67,
+    text: 'I was skeptical because most supplements taste terrible. But Yuko actually tastes like a treat! The pomegranate flavor is delicious.',
+  },
+  {
+    name: 'Rachel B.',
+    img: IMG.reviewer4,
+    time: '1w',
+    reaction: '👍❤️',
+    count: 203,
+    text: 'I’m 52 and thought feeling this good was behind me. Yuko proved me wrong. My clothes fit better than they have in years.',
+  },
+  {
+    name: 'Emily S.',
+    img: IMG.reviewer5,
+    time: '4d',
+    reaction: '❤️🔥',
+    count: 156,
+    text: 'Finally something that actually works! I’ve tried keto, intermittent fasting, everything. With Yuko I’m not starving myself and I finally feel satisfied after meals.',
+  },
+  {
+    name: 'Lisa W.',
+    img: IMG.reviewer6,
+    time: '6d',
+    reaction: '👍',
+    count: 78,
+    text: 'I feel so much better overall. More energy, less bloating, and I finally feel like myself again.',
+  },
+  {
+    name: 'Patricia H.',
+    img: IMG.reviewer7,
+    time: '2w',
+    reaction: '❤️👍',
+    count: 234,
+    text: 'My sugar cravings are GONE. I used to need chocolate every night. Now I don’t even think about it. I never thought I’d be the woman who could pass on dessert without a second thought.',
+  },
+  {
+    name: 'Karen D.',
+    img: IMG.reviewer8,
+    time: '5d',
+    reaction: '😮❤️',
+    count: 92,
+    text: 'The bloating relief alone is worth it! I no longer have to unbutton my pants after lunch.',
+  },
+  {
+    name: 'Donna L.',
+    img: IMG.reviewer9,
+    time: '1w',
+    reaction: '❤️',
+    count: 187,
+    text: 'I’m a nurse and work 12 hour shifts. I used to snack constantly. With Yuko I’m satisfied until my meal breaks.',
+  },
+  {
+    name: 'Christina M.',
+    img: IMG.reviewer10,
+    time: '3d',
+    reaction: '👍❤️',
+    count: 143,
+    text: 'Ordered for me and my mom. We’re both obsessed! We both feel so much better and it’s become our shared little ritual every day.',
+  },
+  {
+    name: 'Nancy P.',
+    img: IMG.reviewer1,
+    time: '1w',
+    reaction: '👍',
+    count: 56,
+    text: 'Was worried about side effects but there are NONE. No jitters, no stomach issues. Just feeling lighter every week!',
+  },
+  {
+    name: 'Stephanie G.',
+    img: IMG.reviewer2,
+    time: '2d',
+    reaction: '🔥❤️',
+    count: 312,
+    text: 'Just ordered my 3rd box! This is the only thing that’s ever helped me feel satisfied with normal portions. I don’t white-knuckle my way through meals anymore — I just eat, feel full, and move on with my life.',
+  },
+  {
+    name: 'Victoria A.',
+    img: IMG.reviewer3,
+    time: '4d',
+    reaction: '😮👍',
+    count: 98,
+    text: 'I was spending $400/month on programs that didn’t work. Yuko costs a fraction of that and I finally feel in control.',
+  },
+  {
+    name: 'Angela F.',
+    img: IMG.reviewer4,
+    time: '1w',
+    reaction: '❤️🎉',
+    count: 276,
+    text: 'My wedding is in 3 months and I was so stressed. 6 weeks on Yuko and I feel confident and comfortable in my dress fittings.',
+  },
+  {
+    name: 'Teresa J.',
+    img: IMG.reviewer5,
+    time: '5d',
+    reaction: '❤️💪',
+    count: 189,
+    text: '60 years old and finally feeling like myself again! Yuko changed that. I feel amazing and the collagen has done wonders for my skin.',
+  },
+  {
+    name: 'Monica C.',
+    img: IMG.reviewer6,
+    time: '3d',
+    reaction: '👍',
+    count: 71,
+    text: 'I keep Yuko in my purse so I never miss it. The convenience is everything — no water, no pills, no fuss.',
+  },
+  {
+    name: 'Brenda Y.',
+    img: IMG.reviewer7,
+    time: '1d',
+    reaction: '❤️👍🔥',
+    count: 401,
+    text: 'Best purchase I’ve made all year! My whole family keeps asking what I’m doing differently. The bloat is gone, my cravings are gone, and I feel like the version of me I’d almost forgotten about.',
+  },
 ];
 
 function ReviewsWallSection() {
@@ -901,7 +1027,7 @@ function ReviewsWallSection() {
             fontSize: 'clamp(22px, 2.6vw, 34px)',
           }}
         >
-          Trusted By <span style={{ color: BRAND_RED }}>Many Customers</span>
+          Trusted By <span style={{ color: BRAND_RED }}>Thousands Of Women</span>
         </h2>
 
         <div className="mt-3 flex items-center justify-center gap-2">
@@ -972,7 +1098,14 @@ function ReviewsWallSection() {
           ))}
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <p
+          className="mt-6 text-center text-xs italic"
+          style={{ color: MUTED }}
+        >
+          * Individual results vary. Names may be changed for customer privacy.
+        </p>
+
+        <div className="mt-8 flex justify-center">
           <a
             href={PRODUCT_LINK}
             className="inline-flex items-center justify-center rounded-full px-8 py-3 font-semibold text-white transition-opacity hover:opacity-90"
@@ -997,22 +1130,66 @@ function FooterSection() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h4 className="text-sm font-semibold mb-3" style={{ color: '#fff' }}>
-              Footer menu
+              Yuko
+            </h4>
+            <p className="text-sm leading-relaxed" style={{ color: '#e8d3d5' }}>
+              Yuko — Korean-formulated wellness for women who want to feel
+              satisfied, energized, and confident.
+            </p>
+            <ul className="space-y-2 text-sm mt-4">
+              <li>
+                <a href="/product" className="hover:underline">
+                  Shop
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:underline">
+                  Subscribe
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:underline">
+                  Reviews
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:underline">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold mb-3" style={{ color: '#fff' }}>
+              Customer Support
+            </h4>
+            {/* TODO: replace placeholder support email with real Yuko inbox before launch */}
+            <p className="text-sm">hello@yuko.com</p>
+
+            <h4 className="text-sm font-semibold mt-5 mb-3" style={{ color: '#fff' }}>
+              Media &amp; Partnerships
+            </h4>
+            {/* TODO: replace placeholder partnerships email with real address */}
+            <p className="text-sm">press@yuko.com</p>
+
+            <h4 className="text-sm font-semibold mt-5 mb-3" style={{ color: '#fff' }}>
+              Help
             </h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/search" className="hover:underline">
+                <a href="/" className="hover:underline">
                   FAQ
                 </a>
               </li>
               <li>
                 <a href="/" className="hover:underline">
                   Manage Subscription
-                </a>
-              </li>
-              <li>
-                <a href="/" className="hover:underline">
-                  Log In
                 </a>
               </li>
               <li>
@@ -1031,18 +1208,6 @@ function FooterSection() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div>
-            <h4 className="text-sm font-semibold mb-3" style={{ color: '#fff' }}>
-              Customer Support
-            </h4>
-            <p className="text-sm">support@eatnumi.com</p>
-
-            <h4 className="text-sm font-semibold mt-5 mb-3" style={{ color: '#fff' }}>
-              Media &amp; Partnerships
-            </h4>
-            <p className="text-sm">partnerships@eatnumi.com</p>
           </div>
 
           <div>
@@ -1073,10 +1238,11 @@ function FooterSection() {
 
           <div>
             <h4 className="text-sm font-semibold mb-3" style={{ color: '#fff' }}>
-              Sign Up To Receive Special Offers
+              Get 10% off your first order
             </h4>
             <p className="text-sm leading-relaxed mb-3">
-              A monthly ritual of nourishment, stories &amp; exclusive offers.
+              Drop your email for a welcome discount, restock alerts, and
+              women-only wellness tips.
             </p>
             <form
               className="flex gap-2"
@@ -1119,7 +1285,7 @@ function FooterSection() {
           className="mt-10 pt-6 text-center text-xs"
           style={{ borderTop: '1px solid #3a1f22', color: '#cbb' }}
         >
-          © 2026 Brand Name. All Rights Reserved.
+          © 2026 Yuko. All Rights Reserved.
         </div>
       </div>
     </footer>

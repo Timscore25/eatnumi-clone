@@ -1,14 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import { openReserve } from '@/lib/reserve';
 
 /**
  * PSection6 — Site header / top navigation.
  * Includes: utility benefits row, primary nav with logo, search, account, cart,
  * and a hover/click-to-open mega menu preview of bestsellers.
  *
- * This is a design template; all marketing prose has been replaced with
- * generic Lorem ipsum placeholders.
+ * This is a design template populated with Yuko brand copy.
  */
 
 const BRAND_RED = '#a31621';
@@ -22,9 +22,9 @@ const BESTSELLER_IMG =
   'https://eatnumi.com/cdn/shop/files/p1-8.png?v=1775174196&width=235';
 
 const utilityItems = [
-  '10000+ Happy Customers',
-  '90 Day Risk-Free Returns',
-  'Money back guarantee.',
+  '10,000+ Happy Customers',
+  '90-Day Risk-Free Returns',
+  'Free Shipping On Orders $75+',
 ];
 
 const primaryNav: { label: string; href: string }[] = [
@@ -177,7 +177,7 @@ export default function PSection6() {
                 Bestsellers
               </h3>
               <ul className="space-y-2 text-sm">
-                {['Lorem ipsum dolor', 'Consectetur adipiscing', 'Sed do eiusmod', 'Tempor incididunt'].map(
+                {['Korean Cutting Jelly', 'Collagen Glow Sticks', 'Keep It Moving', 'Bloat Relief Gummies'].map(
                   (t) => (
                     <li key={t}>
                       <a href="#" className="hover:opacity-70">
@@ -193,7 +193,7 @@ export default function PSection6() {
                 Categories
               </h3>
               <ul className="space-y-2 text-sm">
-                {['Lorem ipsum', 'Dolor sit amet', 'Consectetur', 'Adipiscing elit', 'Sed do eiusmod'].map(
+                {['Best Sellers', 'Cutting', 'Skin', 'Gut Health', 'Bundles'].map(
                   (t) => (
                     <li key={t}>
                       <a href="#" className="hover:opacity-70">
@@ -220,7 +220,11 @@ export default function PSection6() {
             </div>
             {/* Featured product card */}
             <a
-              href="#buy-box"
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                openReserve();
+              }}
               className="col-span-3 block rounded-xl overflow-hidden transition-transform hover:-translate-y-0.5"
               style={{ backgroundColor: BRAND_PINK }}
             >
@@ -236,8 +240,8 @@ export default function PSection6() {
                 <p className="text-[11px] uppercase tracking-widest" style={{ color: BRAND_RED }}>
                   Featured
                 </p>
-                <p className="text-sm font-semibold mt-1">Lorem ipsum dolor sit</p>
-                <p className="text-sm mt-1">$63.00</p>
+                <p className="text-sm font-semibold mt-1">Yuko Cutting Jelly Sticks</p>
+                <p className="text-sm mt-1">$59.00</p>
               </div>
             </a>
           </div>

@@ -67,7 +67,7 @@ export default function Section1() {
               margin: 0,
             }}
           >
-            LIMITED TIME OFFER
+            BUY 2 GET 4 FREE — ENDS TONIGHT
           </h2>
 
           {/* CTA Button */}

@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const marqueeImages = [
   '//eatnumi.com/cdn/shop/files/Numi_PDP_1.webp?v=1772714393&width=1200',
@@ -46,27 +47,30 @@ const PSection5: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.2em] uppercase mb-3"
             style={{ color: '#a31621' }}
           >
-            Lorem Ipsum
+            Real Women, Real Results
           </p>
           <h2
             id="psection5-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
             style={{ color: '#a31621' }}
           >
-            From &lsquo;Lorem Ipsum&rsquo; to &lsquo;Dolor Sit Amet!&rsquo;
+            From &lsquo;Nothing&apos;s Working&rsquo; to &lsquo;I Finally Feel
+            Like Myself&rsquo;
           </h2>
           <p className="mt-4 text-base md:text-lg text-neutral-700 max-w-3xl mx-auto">
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-            et dolore magna aliqua enim ad minim veniam.
+            Women across the U.S. are quietly trading injections, fad diets,
+            and overpriced programs for one Korean jelly stick a day.
+            Here&apos;s what their everyday looks like with Yuko.
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center">
-            <a
-              href="#buy-box"
+            <button
+              type="button"
+              onClick={() => openReserve()}
               className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm md:text-base font-semibold tracking-wide text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#a31621' }}
             >
-              Shop Now
-            </a>
+              Reserve Yours
+            </button>
             <a
               href="#"
               className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm md:text-base font-semibold tracking-wide border-2 transition-colors"

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const BRAND_RED = '#a31621';
 const BRAND_CREAM = '#fff9f5';
@@ -126,13 +127,14 @@ export default function PSection14() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve()}
             className="inline-block rounded-full px-10 py-3 text-sm font-bold uppercase tracking-wider transition-opacity hover:opacity-90 md:text-base"
             style={{ backgroundColor: BRAND_RED, color: BRAND_CREAM }}
           >
-            Shop Now
-          </a>
+            Reserve Yours
+          </button>
         </div>
       </div>
 
@@ -294,13 +296,14 @@ export default function PSection14() {
                   $0.00
                 </span>
               </div>
-              <a
-                href="#buy-box"
+              <button
+                type="button"
+                onClick={() => openReserve()}
                 className="block w-full rounded-full py-3 text-center text-sm font-bold uppercase tracking-widest"
                 style={{ backgroundColor: BRAND_RED, color: BRAND_CREAM }}
               >
-                Secure Checkout &rarr;
-              </a>
+                Reserve My Spot &rarr;
+              </button>
               <p className="mt-3 text-center text-xs opacity-70">
                 Try it risk-free for 90 days &mdash; full refund, zero hassle.
               </p>

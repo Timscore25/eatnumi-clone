@@ -1,18 +1,21 @@
+'use client';
+
 import React from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const bullets = [
-  'Lorem ipsum dolor sit amet consectetur.',
-  'Sed do eiusmod tempor incididunt ut labore.',
-  'Ut enim ad minim veniam quis nostrud.',
+  'Quiets cravings naturally with Garcinia + serotonin support.',
+  'Real fullness from chia expanding in your stomach.',
+  'Collagen + HA protect your skin while your body shifts.',
 ];
 
 const negatives = [
-  'Lorem ipsum dolor sit amet.',
-  'Consectetur adipiscing elit sed.',
-  'Eiusmod tempor incididunt labore.',
-  'Magna aliqua ut enim ad minim.',
-  'Veniam quis nostrud exercitation.',
-  'Ullamco laboris nisi ut aliquip.',
+  'Stimulants spike then crash your energy.',
+  'Pills with poor bioavailability.',
+  'Fad ingredients with no real science behind them.',
+  'Empty promises and no guarantee.',
+  'Bad taste makes you skip days.',
+  "Built for men's metabolism, not women's.",
 ];
 
 const PSection4: React.FC = () => {
@@ -29,11 +32,11 @@ const PSection4: React.FC = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
             style={{ color: '#a31621' }}
           >
-            Lorem ipsum dolor sit amet
+            Tired of supplements that don&apos;t work?
           </h2>
           <p className="mt-4 text-base md:text-lg text-neutral-700 max-w-3xl mx-auto">
-            Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua enim ad minim veniam.
+            Most weight-support products either rely on harsh stimulants or do
+            nothing at all. Yuko was built differently.
           </p>
         </div>
 
@@ -41,9 +44,10 @@ const PSection4: React.FC = () => {
           {/* Left: copy */}
           <div className="order-2 lg:order-1">
             <p className="text-base md:text-lg text-neutral-800 leading-relaxed mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris.
+              Walk down any supplement aisle and you&apos;ll see the same
+              broken formulas — caffeine-loaded fat burners, chalky shakes,
+              pills that sit in your gut without absorbing. They leave you
+              jittery, exhausted, or no better than before.
             </p>
 
             <div
@@ -54,7 +58,7 @@ const PSection4: React.FC = () => {
                 className="text-sm md:text-base font-semibold mb-4"
                 style={{ color: '#a31621' }}
               >
-                Lorem ipsum:
+                Why most supplements fail:
               </p>
               <ul className="space-y-3">
                 {negatives.map((n, i) => (
@@ -77,10 +81,10 @@ const PSection4: React.FC = () => {
 
             <p className="text-base md:text-lg text-neutral-800 leading-relaxed mb-6">
               <span className="font-semibold" style={{ color: '#a31621' }}>
-                Our Product
+                Yuko
               </span>{' '}
-              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore.
+              is Korean-formulated to work with your body — pomegranate jelly,
+              4 evidence-backed ingredients, designed for women.
             </p>
 
             <ul className="space-y-3 mb-8">
@@ -102,13 +106,14 @@ const PSection4: React.FC = () => {
             </ul>
 
             <div className="flex flex-col sm:flex-row sm:items-center gap-4">
-              <a
-                href="#buy-box"
+              <button
+                type="button"
+                onClick={() => openReserve()}
                 className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm md:text-base font-semibold tracking-wide text-white transition-opacity hover:opacity-90"
                 style={{ backgroundColor: '#a31621' }}
               >
-                Shop Now
-              </a>
+                Reserve Yours
+              </button>
               <div className="flex items-center gap-2 text-sm text-neutral-700">
                 <span
                   aria-hidden
@@ -117,7 +122,7 @@ const PSection4: React.FC = () => {
                 >
                   ✓
                 </span>
-                <span>Lorem ipsum guarantee</span>
+                <span>90-day money-back guarantee</span>
               </div>
             </div>
           </div>

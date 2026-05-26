@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const RED = '#a31621';
 const CREAM = '#fff9f5';
@@ -113,13 +116,14 @@ export default function PSection8() {
 
         {/* CTA */}
         <div className="mt-10 md:mt-14 text-center">
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve()}
             className="inline-block rounded-full px-8 md:px-12 py-3 md:py-4 text-white text-sm md:text-base font-bold tracking-wide shadow-md transition-transform hover:-translate-y-0.5"
             style={{ backgroundColor: RED }}
           >
-            TRY IT NOW {'→'}
-          </a>
+            RESERVE MINE {'→'}
+          </button>
           <div className="mt-4 text-xs md:text-sm text-gray-600">
             <span className="inline-flex items-center gap-2">
               <span aria-hidden="true">{'✓'}</span> 99-day Money Back Guarantee

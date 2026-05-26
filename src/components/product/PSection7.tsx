@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { openReserve } from '@/lib/reserve';
 
 /**
  * PSection7 — Pre-page overlays: cookie consent banner + promotional
@@ -42,13 +43,14 @@ function CountdownBar() {
       <div className="max-w-[1440px] mx-auto px-4 py-2 flex flex-wrap items-center justify-center gap-3 md:gap-6 text-xs md:text-sm">
         <span className="font-semibold uppercase tracking-wider">Lorem Ipsum Sale</span>
 
-        <a
-          href="#buy-box"
+        <button
+          type="button"
+          onClick={() => openReserve()}
           className="inline-flex items-center px-3 py-1 rounded-full text-[11px] md:text-xs font-bold uppercase tracking-wider"
           style={{ backgroundColor: BRAND_CREAM, color: BRAND_RED }}
         >
           Shop Now
-        </a>
+        </button>
 
         <div className="flex items-center gap-1.5 md:gap-2 font-mono">
           <TimeBlock value={pad(hours)} label="Hours" />

@@ -183,7 +183,7 @@ function TrustStrip() {
           className="text-sm sm:text-base"
           style={{ fontWeight: 500, marginBottom: 8 }}
         >
-          Lorem ipsum dolor sit amet
+          Ready to feel lighter, less bloated, and finally in control? Yuko ships free — and you&apos;re covered for 90 days.
         </p>
         <a
           href="/product"
@@ -291,7 +291,7 @@ function NewsletterPopup({
               opacity: 0.85,
             }}
           >
-            BRAND
+            YUKO
           </p>
 
           {/* Heading */}
@@ -306,9 +306,9 @@ function NewsletterPopup({
               color: '#ffffff',
             }}
           >
-            Lorem ipsum dolor sit amet
+            Get 10% off your
             <br />
-            consectetur adipiscing.
+            first Yuko box.
           </h2>
 
           <p
@@ -320,8 +320,8 @@ function NewsletterPopup({
               lineHeight: 1.5,
             }}
           >
-            Subscribe to our newsletter for updates and exclusive offers.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Join thousands of women using Yuko to feel lighter, less bloated,
+            and finally satisfied — without injections or restrictive diets.
           </p>
 
           {/* Email input */}
@@ -391,7 +391,7 @@ function NewsletterPopup({
             className="mt-6"
             style={{ fontSize: 11, opacity: 0.7, lineHeight: 1.5 }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor.
+            By submitting your email, you agree to receive marketing messages from Yuko. Unsubscribe anytime. *Individual results vary.
           </p>
         </div>
       </div>
@@ -405,23 +405,23 @@ function NewsletterPopup({
 
 const SEARCH_PRODUCTS: { title: string; price: string; img: string }[] = [
   {
-    title: 'Product A',
-    price: '$42.00',
+    title: 'Korean Cutting Jelly',
+    price: '$59.00',
     img: PRODUCT_IMG_1,
   },
   {
-    title: 'Product B',
-    price: '$56.00',
+    title: 'Collagen & Glow Sticks',
+    price: '$49.00',
     img: PRODUCT_IMG_2,
   },
   {
-    title: 'Product C',
+    title: 'Bloat Relief Gummies',
     price: '$42.00',
     img: PRODUCT_IMG_3,
   },
   {
-    title: 'Product D',
-    price: '$42.00',
+    title: 'Energy Reset Pack',
+    price: '$69.00',
     img: PRODUCT_IMG_4,
   },
 ];
@@ -728,7 +728,7 @@ export default function Section3() {
             opacity: 0.92,
           }}
         >
-          <p style={{ margin: 0 }}>© 2026 Brand Name. All rights reserved.</p>
+          <p style={{ margin: 0 }}>© 2026 Yuko. All rights reserved.</p>
           <p style={{ margin: 0 }} className="mt-2 sm:mt-0">
             AUD · Auto Location
           </p>

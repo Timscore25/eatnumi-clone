@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const IMG = {
   numiLogo:
@@ -42,17 +43,18 @@ export default function PSection1() {
             style={{ color: BRAND_CREAM }}
           >
             <span className="text-[13px] md:text-[18px]">
-              LOREM IPSUM SALE
+              YUKO LAUNCH SALE
             </span>
           </h2>
 
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve()}
             className="inline-block rounded-md px-3 py-1 font-bold tracking-wider"
             style={{ backgroundColor: BRAND_CREAM, color: BRAND_RED }}
           >
-            <span className="text-[10px] md:text-[13px]">BUY &amp; GET FREE</span>
-          </a>
+            <span className="text-[10px] md:text-[13px]">BUY 2 GET 3 FREE</span>
+          </button>
 
           <div className="flex items-center gap-2">
             <CountBlock value={pad(hours)} unit="HOURS" />

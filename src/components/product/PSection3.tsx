@@ -1,29 +1,37 @@
+'use client';
+
 import React from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const items = [
   {
     src: '//eatnumi.com/cdn/shop/files/The_most_potent_ingredients_for_woman_hormones_wrapper.png?v=1772713767&width=2000',
-    caption: 'Lorem ipsum dolor sit amet, consectetur adipiscing.',
+    caption: 'Korean-formulated 4-in-1 system for stubborn fat and cravings.',
   },
   {
     src: '//eatnumi.com/cdn/shop/files/Worlds_first_with_reindeer_organs_2x_the_power_of_beef_wrapper.png?v=1772713766&width=2000',
-    caption: 'Sed do eiusmod tempor incididunt ut labore et dolore.',
+    caption:
+      'Reindeer-grade absorption — jelly hits your bloodstream faster than capsules.',
   },
   {
     src: '//eatnumi.com/cdn/shop/files/They_helped_100_000_people_with_unique_Arctic_Herbs_wrapper.png?v=1772713767&width=2000',
-    caption: 'Ut enim ad minim veniam, quis nostrud exercitation.',
+    caption:
+      'Helps 100,000+ women quiet food noise and feel satisfied.',
   },
   {
     src: '//eatnumi.com/cdn/shop/files/Say_bye_to_fatigue_bloating_hormonal_weight_low_libido.png?v=1772713766&width=2000',
-    caption: 'Duis aute irure dolor in reprehenderit in voluptate velit.',
+    caption:
+      'Say bye to bloating, low energy, midsection weight, and stalled progress.',
   },
   {
     src: '//eatnumi.com/cdn/shop/files/No_more_brain_fog_hot_flashes_or_sleepless_nights..png?v=1772713767&width=2000',
-    caption: 'Excepteur sint occaecat cupidatat non proident sunt.',
+    caption:
+      'No more brain fog, sugar crashes, or feeling defeated by 3pm.',
   },
   {
     src: '//eatnumi.com/cdn/shop/files/You_can_feel_like_you_again._Balanced_vibrant_alive..png?v=1772713767&width=2000',
-    caption: 'Mollit anim id est laborum lorem ipsum dolor sit amet.',
+    caption:
+      'You can feel like yourself again. Balanced, lean, glowing, alive.',
   },
 ];
 
@@ -41,11 +49,11 @@ const PSection3: React.FC = () => {
             className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight"
             style={{ color: '#a31621' }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Why women keep coming back to Yuko
           </h2>
           <p className="mt-4 text-base md:text-lg text-neutral-700 max-w-3xl mx-auto">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua.
+            These aren&apos;t influencers. These are real women who tried
+            everything else first.
           </p>
         </div>
 
@@ -77,13 +85,14 @@ const PSection3: React.FC = () => {
         </div>
 
         <div className="mt-10 md:mt-14 flex justify-center">
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve()}
             className="inline-flex items-center justify-center rounded-full px-8 py-3 text-sm md:text-base font-semibold tracking-wide text-white transition-opacity hover:opacity-90"
             style={{ backgroundColor: '#a31621' }}
           >
-            Shop Now
-          </a>
+            Reserve Yours
+          </button>
         </div>
       </div>
     </section>

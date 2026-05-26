@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import { openReserve } from '@/lib/reserve';
 
 const RED = '#a31621';
 const CREAM = '#fff9f5';
@@ -106,13 +109,14 @@ export default function PSection10() {
             </div>
 
             <div className="mt-6 md:mt-8">
-              <a
-                href="#buy-box"
+              <button
+                type="button"
+                onClick={() => openReserve()}
                 className="inline-block rounded-full px-8 md:px-10 py-3 md:py-4 text-white text-sm md:text-base font-bold tracking-wide shadow-md transition-transform hover:-translate-y-0.5"
                 style={{ backgroundColor: RED }}
               >
-                SHOP NOW
-              </a>
+                RESERVE NOW
+              </button>
             </div>
           </div>
         </div>

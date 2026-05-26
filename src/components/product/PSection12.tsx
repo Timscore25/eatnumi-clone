@@ -1,3 +1,7 @@
+'use client';
+
+import { openReserve } from '@/lib/reserve';
+
 const BRAND_RED = '#a31621';
 const BRAND_CREAM = '#fff9f5';
 const BRAND_PINK = '#ffeaea';
@@ -65,13 +69,14 @@ export default function PSection12() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris.
           </p>
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve()}
             className="inline-block rounded-full px-10 py-3 text-sm font-bold uppercase tracking-wider transition-opacity hover:opacity-90 md:text-base"
             style={{ backgroundColor: BRAND_RED, color: BRAND_CREAM }}
           >
-            Shop Now
-          </a>
+            Reserve Yours
+          </button>
         </div>
       </div>
     </section>

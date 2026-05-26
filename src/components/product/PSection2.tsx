@@ -1,6 +1,8 @@
 'use client';
 
+// TODO: replace placeholder doctor name "Dr. Lena Park, MD" with real doctor name + credentials before launch
 import { useState } from 'react';
+import { openReserve, type ReserveVariant } from '@/lib/reserve';
 
 const BRAND_RED = '#a6171f';
 const BRAND_CREAM = '#fff9f5';
@@ -53,9 +55,9 @@ const VARIANTS: Variant[] = [
     id: 'v1',
     title: 'Buy 1 Get 1 FREE',
     sticks: '10 Cutting Sticks',
-    price: '$50',
+    price: '$59',
     oldPrice: '$126',
-    save: 'You Save $76',
+    save: 'You Save $67',
   },
   {
     id: 'v2',
@@ -79,50 +81,54 @@ const VARIANTS: Variant[] = [
 ];
 
 const STATS = [
-  { pct: '79%', label: 'Lorem ipsum dolor sit amet' },
-  { pct: '92%', label: 'Lorem ipsum sit amet consectetur' },
-  { pct: '90%', label: 'Lorem ipsum dolor consectetur' },
+  { pct: '79%', label: 'saw stubborn belly fat shift*' },
+  { pct: '92%', label: 'felt less bloated within 5 days*' },
+  { pct: '90%', label: 'felt full until their next meal*' },
 ];
 
 const FAQS: { q: string; a: string }[] = [
   {
-    q: 'How does Our Product work?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    q: 'How does Yuko work?',
+    a: "Yuko combines Garcinia Cambogia, chia seeds, marine collagen, and hyaluronic acid into a pomegranate-flavored jelly stick. The Garcinia supports serotonin (your 'I'm satisfied' signal), the chia expands in your stomach for real fullness, and the collagen + HA keep your skin glowing while your body shifts.",
   },
   {
     q: 'What Does It Taste Like?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    a: 'Pomegranate. Sweet, slightly tart, genuinely delicious. No chalky pills, no fishy aftertaste, no choking anything down. Most customers say it tastes like a treat.',
   },
   {
     q: 'When Will I Start Seeing Results?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit.',
+    a: 'Most women feel less bloated and notice quieter cravings within the first week. Visible changes in how clothes fit typically appear by week 4-6. Stick with it for the full 90 days for the deepest results.',
   },
   {
     q: 'How Do I Take It?',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    a: 'One pomegranate jelly stick a day — tear, squeeze, eat. No water needed. We recommend after lunch so you feel full through the afternoon. For intensive support, take two sticks (morning + evening).',
   },
   {
     q: 'Shipping & Returns',
-    a: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident.',
+    a: "We ship within 24 hours via expedited shipping. Most orders arrive in 4-6 business days. Not feeling it after 90 days? Return your boxes and we'll refund every penny — no questions asked.",
   },
 ];
 
 const INGREDIENTS = [
   {
-    name: 'Lorem Extract',
-    blurb: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    name: 'Garcinia Cambogia',
+    blurb:
+      "Contains HCA which supports healthy serotonin signaling — the 'I'm satisfied' chemical. Cravings finally quiet down.",
   },
   {
-    name: 'Ingredient One',
-    blurb: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    name: 'Chia Seeds',
+    blurb:
+      'Expand in your stomach for real, lasting fullness. Packed with fiber for digestive comfort.',
   },
   {
-    name: 'Ingredient Three',
-    blurb: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    name: 'Marine Collagen',
+    blurb:
+      'Repairs your gut lining (where appetite hormones live) and keeps your skin tight and plump as your body shifts.',
   },
   {
-    name: 'Ingredient Four',
-    blurb: 'Lorem ipsum dolor sit amet consectetur adipiscing elit.',
+    name: 'Hyaluronic Acid',
+    blurb:
+      'Locks moisture into your skin from the inside so you look glowing — not depleted.',
   },
 ];
 
@@ -208,7 +214,7 @@ export default function PSection2() {
             </button>
 
             <h1 className="text-3xl font-bold leading-tight md:text-4xl">
-              Featured Product Name
+              Yuko Korean Cutting Jelly Sticks
             </h1>
 
             <div className="mt-2 flex items-center gap-2">
@@ -222,14 +228,18 @@ export default function PSection2() {
                 Fast Shipping
               </span>
               <span className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 font-medium">
-                Lorem ipsum
+                GMP Certified
+              </span>
+              <span className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 font-medium">
+                Stimulant Free
               </span>
             </div>
 
             <p className="mt-4 text-sm leading-relaxed text-black/70 md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua —
-              lorem ipsum dolor sit amet consectetur.
+              Experience quieter cravings, a flatter belly &amp; a real cut
+              within weeks — thanks to our breakthrough Korean cutting formula
+              in a delicious pomegranate jelly stick. No prescription. No
+              nausea. No injections.
             </p>
 
             {/* Stats */}
@@ -251,6 +261,9 @@ export default function PSection2() {
                 </div>
               ))}
             </div>
+            <p className="mt-1 text-[10px] text-black/50">
+              *Individual results vary
+            </p>
 
             {/* Low stock warning */}
             <div
@@ -264,8 +277,8 @@ export default function PSection2() {
               <span className="font-bold" style={{ color: BRAND_RED }}>
                 WARNING
               </span>
-              : Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-              eiusmod tempor.
+              : Once this batch sells out, our next restock is 4-6 weeks away.
+              We&apos;re capping orders to keep up with demand.
             </div>
 
             {/* Sale heading */}
@@ -273,7 +286,7 @@ export default function PSection2() {
               className="mt-5 rounded-t-xl py-2 text-center text-xs font-bold uppercase tracking-wider md:text-sm"
               style={{ backgroundColor: BRAND_RED, color: BRAND_CREAM }}
             >
-              Lorem Ipsum Sale Ending Soon
+              BUY 2 GET 3 FREE — ENDS TONIGHT
             </div>
 
             {/* Variants */}
@@ -371,7 +384,7 @@ export default function PSection2() {
                     </span>
                   </div>
                   <div className="mt-0.5 text-[11px] text-black/60">
-                    Lorem ipsum | Monthly | Cancel Anytime
+                    Free shipping · Monthly · Cancel anytime
                   </div>
                 </div>
                 <input
@@ -383,14 +396,15 @@ export default function PSection2() {
                 />
               </label>
 
-              {/* Add to cart */}
-              <a
-                href="#buy-box"
+              {/* Reserve (was Add to cart) */}
+              <button
+                type="button"
+                onClick={() => openReserve(variant as Exclude<ReserveVariant, null>)}
                 className="mt-4 block w-full rounded-xl py-3 text-center text-base font-bold uppercase tracking-wider text-white shadow-md transition hover:opacity-90"
                 style={{ backgroundColor: BRAND_RED }}
               >
-                Add to Cart
-              </a>
+                Reserve Yours
+              </button>
 
               {/* Trust badges */}
               <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[11px]">
@@ -466,11 +480,14 @@ export default function PSection2() {
               Dermatologist Approved
             </div>
             <p className="mt-3 text-lg font-medium italic leading-snug md:text-xl">
-              &ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.&rdquo;
+              &ldquo;One of the best-formulated natural appetite-support
+              products I&apos;ve seen. Yuko&apos;s Korean formula combines
+              proven ingredients with skin-protective collagen — exactly what I
+              look for when supporting clients through a body recomposition
+              journey.&rdquo;
             </p>
-            <div className="mt-3 text-sm font-bold">Reviewer A, MD</div>
+            {/* TODO: real doctor name + credentials before launch */}
+            <div className="mt-3 text-sm font-bold">Dr. Lena Park, MD</div>
             <a
               href="#"
               className="mt-2 inline-block text-sm font-semibold underline"
@@ -526,9 +543,9 @@ export default function PSection2() {
         style={{ backgroundColor: BRAND_RED, color: BRAND_CREAM }}
       >
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-center gap-3 px-4 py-3 text-center text-xs font-semibold uppercase tracking-wider md:text-sm">
-          <span>◈ Lorem Ipsum</span>
-          <span>◈ Dolor Sit Amet</span>
-          <span>◈ Consectetur ◈</span>
+          <span>◈ Korean-Formulated</span>
+          <span>◈ Stimulant Free</span>
+          <span>◈ 90-Day Guarantee ◈</span>
         </div>
       </div>
 
@@ -542,16 +559,16 @@ export default function PSection2() {
             className="mt-2 text-3xl font-extrabold md:text-5xl"
             style={{ color: BRAND_RED }}
           >
-            LOREM IPSUM
+            53,000+ WOMEN
           </h2>
           <p className="mt-1 text-base font-bold uppercase tracking-wider md:text-lg">
-            Found their balance with our
+            Found their balance with Yuko
           </p>
           <p
             className="text-2xl font-extrabold uppercase tracking-wider md:text-3xl"
             style={{ color: BRAND_RED }}
           >
-            Wellness Jelly Sticks
+            Korean Wellness Jelly Sticks
           </p>
         </div>
 
@@ -564,14 +581,16 @@ export default function PSection2() {
               The Modern Wellness Crisis
             </h3>
             <p className="mt-3 text-sm text-black/70 md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              You&apos;ve been told the only way to lose weight is to inject
+              yourself, starve yourself, or pay $1,000+/month for
+              prescriptions. Most options leave you depleted, jittery, or
+              hollow-faced.
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               {[
-                'Lorem ipsum dolor sit amet',
-                'Consectetur adipiscing elit',
-                'Sed do eiusmod tempor incididunt',
+                'Stimulants wreck sleep and cause jitters',
+                'Injections cost $14,000/year and hollow your face',
+                'Crash diets destroy your metabolism',
               ].map((t) => (
                 <li key={t} className="flex items-start gap-2">
                   <span style={{ color: BRAND_RED }}>✗</span>
@@ -586,18 +605,20 @@ export default function PSection2() {
             style={{ backgroundColor: BRAND_RED }}
           >
             <h3 className="text-xl font-bold md:text-2xl">
-              Our Product flips the script
+              Yuko flips the script
             </h3>
             <p className="mt-3 text-sm opacity-90 md:text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Yuko works with your body, not against it. Korean-formulated,
+              made with 4 powerful ingredients that quiet cravings, support
+              fullness, and protect your skin — all in a tasty jelly stick
+              that costs less than your morning coffee.
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               {[
-                'Lorem ipsum dolor sit amet',
-                'Consectetur adipiscing elit',
-                'Sed do eiusmod tempor incididunt',
-                'Ut labore et dolore magna',
+                'Quiet cravings, naturally',
+                'Real fullness from chia, not stimulants',
+                'Protects skin with collagen + HA',
+                'Under $2/day. No prescription.',
               ].map((t) => (
                 <li key={t} className="flex items-start gap-2">
                   <span>✓</span>
@@ -610,13 +631,14 @@ export default function PSection2() {
 
         {/* Big CTA */}
         <div className="mt-10 flex flex-col items-center">
-          <a
-            href="#buy-box"
+          <button
+            type="button"
+            onClick={() => openReserve(variant as Exclude<ReserveVariant, null>)}
             className="rounded-full px-8 py-4 text-base font-extrabold uppercase tracking-wider text-white shadow-lg transition hover:opacity-90 md:text-lg"
             style={{ backgroundColor: BRAND_RED }}
           >
-            Shop Now
-          </a>
+            Reserve Yours
+          </button>
           <p className="mt-3 text-xs text-black/60">
             90-day Money Back Guarantee
           </p>
