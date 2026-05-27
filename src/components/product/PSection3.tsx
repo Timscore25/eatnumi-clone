@@ -5,31 +5,31 @@ import { openReserve } from '@/lib/reserve';
 
 const items = [
   {
-    src: '//eatnumi.com/cdn/shop/files/The_most_potent_ingredients_for_woman_hormones_wrapper.png?v=1772713767&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p1-8.png?v=1775174196&width=800',
     caption: 'Korean-formulated 4-in-1 system for stubborn fat and cravings.',
   },
   {
-    src: '//eatnumi.com/cdn/shop/files/Worlds_first_with_reindeer_organs_2x_the_power_of_beef_wrapper.png?v=1772713766&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p6-1.png?v=1775174196&width=800',
     caption:
-      'Reindeer-grade absorption — jelly hits your bloodstream faster than capsules.',
+      'Pomegranate jelly absorbs faster than capsules. No water needed.',
   },
   {
-    src: '//eatnumi.com/cdn/shop/files/They_helped_100_000_people_with_unique_Arctic_Herbs_wrapper.png?v=1772713767&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p6-6.png?v=1775174196&width=800',
     caption:
       'Helps 100,000+ women quiet food noise and feel satisfied.',
   },
   {
-    src: '//eatnumi.com/cdn/shop/files/Say_bye_to_fatigue_bloating_hormonal_weight_low_libido.png?v=1772713766&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p6-2-2.png?v=1775174196&width=800',
     caption:
       'Say bye to bloating, low energy, midsection weight, and stalled progress.',
   },
   {
-    src: '//eatnumi.com/cdn/shop/files/No_more_brain_fog_hot_flashes_or_sleepless_nights..png?v=1772713767&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p6-10.png?v=1776772710&width=800',
     caption:
       'No more brain fog, sugar crashes, or feeling defeated by 3pm.',
   },
   {
-    src: '//eatnumi.com/cdn/shop/files/You_can_feel_like_you_again._Balanced_vibrant_alive..png?v=1772713767&width=2000',
+    src: '//eatnumi.com/cdn/shop/files/p6-5.png?v=1776772710&width=800',
     caption:
       'You can feel like yourself again. Balanced, lean, glowing, alive.',
   },
@@ -64,12 +64,12 @@ const PSection3: React.FC = () => {
               className="rounded-2xl overflow-hidden shadow-sm border border-neutral-200/70 flex flex-col"
               style={{ backgroundColor: '#ffffff' }}
             >
-              <div className="aspect-[4/3] w-full overflow-hidden bg-neutral-100">
+              <div className="aspect-square w-full overflow-hidden" style={{ backgroundColor: '#ffeaea' }}>
                 <img
                   src={item.src}
-                  alt="Feature image"
+                  alt="Yuko product"
                   loading="lazy"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4"
                 />
               </div>
               <div
