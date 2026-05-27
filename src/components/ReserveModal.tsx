@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { RESERVE_EVENT, type ReserveVariant } from '@/lib/reserve';
+import { trackReserveOpen, trackReserveSubmit } from '@/components/Pixels';
 
 const BRAND_RED = '#a6171f';
 const BRAND_CREAM = '#fff9f5';
@@ -39,6 +40,9 @@ export default function ReserveModal() {
       setStatus('idle');
       setError(null);
       setOpen(true);
+      trackReserveOpen(
+        typeof window !== 'undefined' ? window.location.pathname : 'unknown',
+      );
     }
     window.addEventListener(RESERVE_EVENT, handler as EventListener);
     return () =>
@@ -88,6 +92,7 @@ export default function ReserveModal() {
         setStatus('error');
         return;
       }
+      trackReserveSubmit(variant);
       setStatus('success');
     } catch (err) {
       console.error(err);
