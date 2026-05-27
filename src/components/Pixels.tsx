@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 const tiktokId = process.env.NEXT_PUBLIC_TIKTOK_PIXEL_ID;
-const metaId = process.env.NEXT_PUBLIC_META_PIXEL_ID;
+const metaId = process.env.NEXT_PUBLIC_META_PIXEL_ID || '1337778518330290';
 
 export default function Pixels() {
   return (
